@@ -1,0 +1,59 @@
+<ion-view>
+  <ion-content class="content">
+    <div class="card">
+      <div class="pane-bar pane-header">
+        <p class="head">Pakistan Standards & Quality Control Authority</p>
+      </div>
+      <div class="pane-body">
+
+        <div class="row">
+          <div class="col col-50">
+            <p class="pane-description">
+
+            </p>
+          </div>
+
+          <div class="col col-50">
+            <img class="logo" src="img/logo.png" alt="LOGO">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-50">
+            <p class="pane-description">
+              ALERTS
+            </p>
+          </div>
+
+          <div class="col col-50">
+
+          </div>
+        </div>
+
+      </div>
+      <div class="list">
+        <div class="inputdiv row responsive-sm">
+          <div ng-repeat="alert in alertsn">
+            <p class="text-sm">
+              {{alert.article | limitTo:alert.limit}}
+              <span ng-show="alert.article.length > alert.limit">...</span>
+            </p>
+            <div class="row">
+              <div class="col col-33"></div>
+              <div class="col col-33"></div>
+              <div class="col col-33"><p class="learnmore" ng-click="clickLearnMore(alert.id)">Learn More</p></div>
+            </div>
+            <div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pane-bar pane-footer">
+          <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
