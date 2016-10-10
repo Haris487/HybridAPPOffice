@@ -17,7 +17,13 @@
         <p class="head">Pakistan Standards & Quality Control Authority</p>
       </div>
      <ul ng-repeat="item in itemsn" class = 'list'>
-       <li class = 'item'>{{item.name}}</li>
+       <li class = 'item item-button-right downloaditem'>
+         <p class =' downloadtext'>{{item.name}}</p>
+
+         <button ng-click="downloadFile(item.id)" class="button button-positive downicon">
+           <i class="icon ion-archive "></i>
+         </button>
+       </li>
      </ul>
       <div class="pane-bar pane-footer">
         <p class="Text">Copyrights 2016 by PSQCA<br>Design and Developed by Adarts Digital</p>

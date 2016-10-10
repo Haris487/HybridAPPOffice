@@ -1,4 +1,4 @@
-angular.module('psqca', ['ionic', 'LocalStorageModule'])
+angular.module('psqca', ['ionic', 'LocalStorageModule',['ngCordova']])
 
   .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -78,7 +78,7 @@ angular.module('psqca', ['ionic', 'LocalStorageModule'])
       .state('alerts', {
         url: '/alerts',
         templateUrl: 'templates/alerts.html',
-        controller: 'alertsController'
+        controller: 'AlertsController'
       })
       .state('facebook', {
         url: '/facebook',
@@ -113,4 +113,4 @@ angular.module('psqca', ['ionic', 'LocalStorageModule'])
     }
 
 
-  }]);
+  }])

@@ -8,14 +8,16 @@
     $scope.user = {};
     $scope.login = function(){
 
-      Auth.login($scope.user).then(function(response){
-        $scope.user = {};
-        if(response.token){
-          $state.go('home');
-        }
-      },function(error){
-        console.log(error);
-      })
+      $state.go('home');
+      // Auth.login($scope.user).then(function(response){
+      //   $scope.user = {};
+      //   if(response.token){
+      //     $state.go('home');
+      //   }
+      //
+      // },function(error){
+      //   console.log(error);
+      // })
 
     }
 

@@ -1,2 +1,2 @@
 # HybridAPPOffice
-Controllers me kuch masla hai dekh lena
+ng-cordova not working while injecting module;

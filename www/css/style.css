@@ -281,3 +281,35 @@ select{
   margin-left: auto;
   margin-right: auto;
 }
+.text-sm{
+  font-size: x-small;
+  line-height: 1;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.learnmore{
+  padding : 0px;
+  font-size : 70%;
+  color: #fff;
+  margin-top:0px;
+  text-align: center;
+  background-color: #4cd964;
+}
+.downloaditem{
+  margin:8px !important;
+  padding-top : 7px;
+  padding-bottom : 7px;
+  padding-left : 7px;
+  font-size: 12px;
+}
+.downicon{
+  margin: 0px !important;
+  top:-5px !important;
+  background-color: transparent !important;
+  color : #4cd964 !important;
+  padding: 0px;
+}
+.downloadtext{
+
+  text-overflow: ellipsis;
+}
